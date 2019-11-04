@@ -1,2 +1,2 @@
-# OO_Game
-OO game with C#
+# Carro de controle usando programação orientada a objetos
+feito por Felipe Caridade
