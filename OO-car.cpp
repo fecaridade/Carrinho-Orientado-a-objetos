@@ -17,13 +17,13 @@ OOCarMotor::OOCarMotor(int pino_In1, int pino_In2, int pino_pwm){
      pinMode(_pino_pwm, OUTPUT);
 }
 //Velocidade - Metodos
-OOCarMotor::setSpeed(int velocidade){
+void OOCarMotor::setSpeed(int velocidade){
     _velocidade = velocidade;
 }
 
 //Direção - Metodos
-OOCarMotor::run(int direcao){
-    _direcao = direcao
+void OOCarMotor::run(int direcao){
+    _direcao = direcao;
 
     switch (_direcao) {
 	    case FORWARD:
@@ -53,11 +53,11 @@ OOCarControlLed::OOCarControlLed(int pino_led){
     pinMode(_pino_led, OUTPUT);
 }
 
-OOCarControlLed::acender(){
+void OOCarControlLed::acender(){
     pinMode(_pino_led,HIGH);
 }
 
-OOCarControlLed::apagar(){
+void OOCarControlLed::apagar(){
     pinMode(_pino_led,LOW);
 }
 
