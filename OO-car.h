@@ -39,7 +39,7 @@ class OOCarControlLed
 
 
     private:
-        int _pino_led
+        int _pino_led;
 };
 
 #endif
