@@ -39,8 +39,10 @@ class janelaPrincipal(wx.Frame):
 
     def _pressFarolOn(self, event):
         print("Farol Ligado")
+        portaUSB.write(b'a')
 
     def _pressFarolOff(self, event):
+        portaUSB.write(b'p')
         print("Farol Desligado")
 
 
